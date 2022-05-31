@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <main class="main">
+        <section class="navigation-mobile navigation-toggle-close">
+
+            <div class=" navigation-sidebars-mobile">
+                <div class=" navigation-logo-mobile">
+                    <svg class="navigation-logo-image-mobile">
+                        <use xlink:href="img/sprite.svg#icon-renren"></use>
+                    </svg>
+                    <i class="fa-solid fa-x navigation-close-mobile" onclick="navigationClose()"></i>
+                </div>
+                <ul class="navigation-side-mobile">
+                    <li class="navigation-overview-mobile">
+                        <a href="#" class="navigation-link-mobile">
+                            <i class="fa-solid fa-file-lines navigation-icon-mobile"></i>
+                            <span>Overview</span>
+                        </a>
+                    </li>
+                    <li class="navigation-tickets-mobile">
+                        <a href="#" class="navigation-link-mobile">
+                            <i class="fa-solid fa-file-lines navigation-icon-mobile"></i>
+                            <span>Tickets</span>
+                        </a>
+                    </li>
+                    <li class="navigation-messages-mobile">
+                        <a href="#" class="navigation-link-mobile">
+                            <i class="fa-solid fa-comment-dots navigation-icon-mobile"></i>
+                            <span>Messages</span>
+                        </a>
+                    </li>
+                    <li class="navigation-customers-mobile">
+                        <a href="#" class="navigation-link-mobile">
+                            <i class="fa-solid fa-user-group navigation-icon-mobile"></i>
+                            <span>Customers</span>
+                        </a>
+                    </li>
+                    <li class="navigation-support-mobile">
+                        <a href="#" class="navigation-link-mobile">
+                            <i class="fa-solid fa-circle-question navigation-icon-mobile"></i>
+                            <span>Support</span>
+                        </a>
+                    </li>
+                    <li class="navigation-settings-mobile">
+                        <a href="#" class="navigation-link-mobile">
+                            <i class="fa-solid fa-gear navigation-icon-mobile"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    <li class="navigation-bell-mobile">
+                        <a href="#" class="navigation-link-mobile">
+                            <i class="fa-solid fa-bell navigation-icon-mobile""></i>
+                            <span>Notification</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class=" navigation-footer-mobile">
+
+                                <figure class="navigation-footer-person-shape">
+                                    <img src="img/personfooter.jpg" alt="person1"
+                                        class="navigation-footer-person-image">
+                                </figure>
+                                <figure class="navigation-footer-plus-shape">
+                                    <img src="img/plusimage.jpg" alt="person1" class="navigation-footer-plus-image">
+                                </figure>
+            </div>
+        </section>
+
+        <section class="navigation">
+            <div class="navigation-sidebars">
+                <div class="navigation-logo">
+                    <svg class="navigation-logo-image">
+                        <use xlink:href="img/sprite.svg#icon-renren"></use>
+                    </svg>
+                </div>
+                <ul class="navigation-side">
+                    <li class="navigation-overview">
+                        <a href="#" class="navigation-link">
+                            <i class="fa-solid fa-chart-pie navigation-icon"></i>
+                            <span>Overview</span>
+                        </a>
+                    </li>
+                    <li class="navigation-tickets">
+                        <a href="#" class="navigation-link">
+                            <i class="fa-solid fa-file-lines navigation-icon"></i>
+                            <span>Tickets</span>
+                        </a>
+                    </li>
+                    <li class="navigation-messages">
+                        <a href="#" class="navigation-link">
+                            <i class="fa-solid fa-comment-dots navigation-icon"></i>
+                            <span>Messages</span>
+                        </a>
+                    </li>
+                    <li class="navigation-customers">
+                        <a href="#" class="navigation-link">
+                            <i class="fa-solid fa-user-group navigation-icon"></i>
+                            <span>Customers</span>
+                        </a>
+                    </li>
+                    <li class="navigation-support">
+                        <a href="#" class="navigation-link">
+                            <i class="fa-solid fa-circle-question navigation-icon"></i>
+                            <span>Support</span>
+                        </a>
+                    </li>
+                    <li class="navigation-settings">
+                        <a href="#" class="navigation-link">
+                            <i class="fa-solid fa-gear navigation-icon"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navigation-footer">
+                <figure class="navigation-footer-plus-shape">
+                    <img src="img/plusimage.jpg" alt="person1" class="navigation-footer-plus-image">
+                </figure>
+                <figure class="navigation-footer-person-shape">
+                    <img src="img/personfooter.jpg" alt="person1" class="navigation-footer-person-image">
+                </figure>
+            </div>
+
+            </div>
+        </section>
+
+        <section class="overview">
+            <div class="header">
+                <div class="notification-toggle-open" onclick="navigationOpen()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="overview-heading">
+                    <h1>Overview</h1>
+                </div>
+                <form action="#" class="search">
+                    <input type="text" class="search-input" placeholder="Search">
+                    <button class="search-button">
+                        <svg class="search-icon">
+                            <use xlink:href="img/sprite.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                </form>
+                <div class="task-toggle-open">
+                    <a href="#" class="Calender-header-icon">
+                        <i class="fa-solid fa-clipboard navigation-icon-ballot-check" onclick="taskOpen()"></i>
+                    </a>
+                </div>
+
+            </div>
+            <!-- <div class="overview-slider-mobile"> -->
+            <div class="new-customers">
+                <h3 class="new-customers-heading">New Customers</h3>
+                <div class="new-customers-change-data">
+                    <h3 class="new-customers-count">230</h3>
+                    <h3 class="new-customers-icon">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                    </h3>
+                    <h3 class="new-customers-percentage">6.9%</h3>
+                </div>
+
+
+                <div class="new-customers-image">
+                    <img src="img/personfooter.jpg" alt="person1"
+                        class="new-customers-image1 new-customers-image-shape">
+                    <img src="img/person1.jpg" alt="person2" class="new-customers-image2 new-customers-image-shape"">
+                        <img src=" img/person2.jpg" alt="person3"
+                        class="new-customers-image3 new-customers-image-shape"">
+                        <img src=" img/whiteimage.jpg" alt="and more"
+                        class="new-customers-image4 new-customers-image-shape"">
+                        <div class=" new-customers-more">+99
+                </div>
+            </div>
+            </div>
+
+
+
+            <div class=" total-ratings">
+                <h3 class="total-ratings-heading">Total Ratings</h3>
+                <p class="total-ratings-stars">4.5</p>
+                <p class="total-ratings-allstars">OUT OF 5</p>
+                <a href="#" class="total-ratings-learn-more">Learn more</a>
+            </div>
+            <div class="new-tickets">
+                <h3 class="new-tickets-heading">New Tickets</h3>
+                <h3 class="new-tickets-count">329</h3>
+            </div>
+
+            <!-- </div> -->
+
+
+            <div class="ticket-priority">
+                <h3 class="ticket-priority-heading">Tickets by priority</h3>
+                <div class="stats-container">
+                    <div class="piechart">
+                        <div class="inner-circle">
+                            <div class="value">
+                                <h1>340</h1>
+                                <span>Total</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ticket-priority-sections">
+                        <ul class="ticket-priority-section-lists">
+                            <li class="ticket-priority-list ticket-priority-list-high">
+                                <div>
+                                    <p>High</p>
+                                    <span>34</span>
+                                </div>
+
+                            </li>
+                            <li class="ticket-priority-list ticket-priority-list-medium">
+                                <div>
+                                    <p>Medium</p>
+                                    <span>45</span>
+                                </div>
+                            </li>
+                            <li class="ticket-priority-list ticket-priority-list-low">
+                                <div>
+                                    <p>Low</p>
+                                    <span>67</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#" class="ticket-priority-footer">Add new Channel</a>
+            </div>
+            <div class="agent-performance">
+                <h3 class="agent-performance-heading">Agents Performance</h3>
+                <div class="agent-performance-person">
+                    <figure class="agent-performance-person-shape">
+                        <img src="img/person1.jpg" alt="person1" class="agent-performance-person-image">
+                    </figure>
+                    <div class="agent-performance-person-serialnumber">1.</div>
+                    <div class="agent-performance-person-name">Gustavo Rosser</div>
+                    <div class="agent-performance-person-review">65 review</div>
+                    <i class="fa-solid fa-greater-than agent-performance-person-arrow"></i>
+                </div>
+                <div class="agent-performance-person">
+                    <figure class="agent-performance-person-shape">
+                        <img src="img/person2.jpg" alt="person2" class="agent-performance-person-image">
+                    </figure>
+
+                    <div class="agent-performance-person-serialnumber">2.</div>
+                    <div class="agent-performance-person-name">Anika Schleifer</div>
+                    <div class="agent-performance-person-review">42 review</div>
+                    <i class="fa-solid fa-greater-than agent-performance-person-arrow"></i>
+
+                </div>
+                <div class="agent-performance-person">
+                    <figure class="agent-performance-person-shape">
+                        <img src="img/person3.jpeg" alt="person3" class="agent-performance-person-image">
+                    </figure>
+
+                    <div class="agent-performance-person-serialnumber">3.</div>
+                    <div class="agent-performance-person-name">Alfredo Calzoni</div>
+                    <div class="agent-performance-person-review">39 review</div>
+                    <i class="fa-solid fa-greater-than agent-performance-person-arrow"></i>
+
+                </div>
+            </div>
+
+
+            <div class="recent-tickets">
+                <div class="recent-tickets-heading">
+                    <h1>Recent tickets</h1>
+                </div>
+
+                <div class="recent-tickets1">
+                    <figure class="recent-ticket-person-shape">
+                        <img src="img/person3.jpeg" alt="person3" class="recent-ticket-person1-image">
+                    </figure>
+                    <div class="recent-tickets1-content">
+                        <div class="head-and-time">
+                            <h1 class="recent-tickets-subject">Can i have an e-copy of invoice</h1>
+                            <span>30m ago</span>
+                        </div>
+                        <div class="recent-tickets-details">consectetur adipiscing sed do eiusmod labore et dolore
+                            manga aliqua
+                        </div>
+                        <span>High Priority</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="task task-toggle-close">
+            <div class="task-close-mobile">
+                <i class="fa-solid fa-x task-close-icon" onclick="taskClose()"></i>
+            </div>
+            <div class="notification">
+                <button class="notification-button">
+                    <i class="fa-solid fa-bell notification-icon"></i>
+                </button>
+            </div>
+            <div class="container">
+                <div class="calender">
+                    <div class="month">
+                        <div class="date">
+                            <h1>October, 2020</h1>
+                        </div>
+                        <div class="arrows">
+                            <i class="fas fa-angle-left prev"></i>
+                            <i class="fas fa-angle-right next"></i>
+                        </div>
+                    </div>
+                    <div class="weekdays">
+                        <div>Mo</div>
+                        <div>Tu</div>
+                        <div>We</div>
+                        <div>Th</div>
+                        <div>Fr</div>
+                        <div>Sa</div>
+                        <div>Su</div>
+                    </div>
+                    <div class="days">
+                        <div class="prev-date">25</div>
+                        <div class="prev-date">26</div>
+                        <div class="prev-date">27</div>
+                        <div class="prev-date">28</div>
+                        <div class="prev-date">29</div>
+                        <div class="prev-date">30</div>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                        <div>10</div>
+                        <div>11</div>
+                        <div>12</div>
+                        <div>13</div>
+                        <div>14</div>
+                        <div>15</div>
+                        <div>16</div>
+                        <div>17</div>
+                        <div>18</div>
+                        <div>19</div>
+                        <div>20</div>
+                        <div>21</div>
+                        <div>22</div>
+                        <div>23</div>
+                        <div>24</div>
+                        <div>25</div>
+                        <div>26</div>
+                        <div>27</div>
+                        <div>28</div>
+                        <div class="today">29</div>
+                        <div>30</div>
+                        <div>31</div>
+                        <div class="next-date">1</div>
+                        <div class="next-date">2</div>
+                        <div class="next-date">3</div>
+                        <div class="next-date">4</div>
+                        <div class="next-date">5</div>
+                    </div>
+                </div>
+            </div>
+            <div class="task-list">
+                <div class="task-list-heading">
+                    <h1 class="task-todays-heading">Today's tasks</h1>
+                    <a href="#" class="task-list-view-all">View all</a>
+                </div>
+                <div class="task-list-order">
+                    <div>
+                        <input type="checkbox" class="task-list-details" id="task-list-1">
+                        <label for="task-list-1">Create a learning Video to the customer in the following
+                            ticket</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="task-list-details" id="task-list-2">
+                        <label for="task-list-2">Send a boarding email to the customer in those
+                            tickets</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="task-list-details" id="task-list-3">
+                        <label for="task-list-3">Assign agents to those new tickets</label>
+                    </div>
+                </div>
+                <div class="new-task">
+                    <button class="plus-button">
+                        <i class="fa-solid fa-plus plus-icon"></i>
+                    </button>
+                    <input type="text" class="new-task-input" placeholder="Add a new task">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
